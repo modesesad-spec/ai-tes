@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLONE AI - RTL-GPT Version</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🤖 CLONE AI</h1>
+            <p>Powered by Multiple AI APIs - 100% WORK</p>
+        </div>
+        
+        <div class="chat-container">
+            <div class="chat-messages" id="chatMessages">
+                <div class="message bot">
+                    <div class="avatar">AI</div>
+                    <div class="content">Halo! Aku CLONE AI, siap bantu lo! Ada yang bisa gue bantu?</div>
+                </div>
+            </div>
+            
+            <div class="typing-indicator" id="typingIndicator" style="display: none;">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        
+        <div class="input-area">
+            <select id="modelSelect" class="model-select">
+                <option value="gpt">GPT-4 Turbo (Primary)</option>
+                <option value="claude">Claude 3 Opus</option>
+                <option value="gemini">Gemini Pro</option>
+                <option value="llama">Llama 3 70B</option>
+                <option value="mistral">Mistral Large</option>
+            </select>
+            
+            <div class="input-wrapper">
+                <textarea id="userInput" placeholder="Ketik pesan lo..." rows="1"></textarea>
+                <button id="sendButton" class="send-btn">
+                    <svg viewBox="0 0 24 24" width="24" height="24">
+                        <path fill="currentColor" d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+                    </svg>
+                </button>
+            </div>
+            
+            <div class="api-status" id="apiStatus">
+                <span class="status-dot green"></span> API Ready
+            </div>
+        </div>
+    </div>
+    
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
